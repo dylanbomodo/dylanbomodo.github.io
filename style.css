@@ -1,0 +1,96 @@
+:root {
+  --body-backgrouncolor: black;
+  --main-color: #4dd0ff;
+  --second-color:white;
+  --padding-section: 60px;
+  --margin-for-space:10%;
+}
+html {
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--body-backgrouncolor);
+  font-family: 'Poppins', sans-serif;
+  color: var(--main-color);
+  line-height: 1.6;
+}
+p{
+  color: var(--second-color);
+}
+#home, #about, #services, #contact {
+  padding-top: 120px; 
+  margin-bottom: 80px;
+}
+header {
+  height: 100px;
+  position: fixed;  
+  top: 0;            
+  left: 0;           
+  width: 100%;  
+  background-color: black;  
+  z-index: 1;
+  box-shadow: 0 2px 6px var(--main-color); 
+  padding: 20px;
+}
+#logo span{
+   color: var(--main-color);
+}
+a {
+  color: var(--main-color) !important;
+}
+ul li{
+  margin-right: 40px;
+}
+img{
+width: 100%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+.containerImg{
+  border-radius: 50%;
+  box-shadow: 0 0 20px var(--main-color),0 0 20px var(--main-color),0 0 20px var(--main-color);
+  margin-left: 5rem;
+}
+.tech-slider {
+  padding: 40px;
+  width: 100%;
+  overflow: hidden;
+}
+.tech-track {
+  display: flex;
+  gap: 40px;
+  animation: slide 10s linear infinite; 
+}
+.tech-track img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
+}
+#contact{
+   max-width: 800px; 
+  min-width: 120px;
+}
+.btnContact{
+  background-color: var(--main-color);
+  border: var(--main-color);
+  margin: auto;
+}
+footer{
+  text-align: center;
+}
+
