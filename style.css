@@ -1,7 +1,7 @@
 :root {
-  --body-backgrouncolor: black;
+  --body-backgrouncolor: rgba(252, 249, 249, 0.932);
   --main-color: #4dd0ff;
-  --second-color:white;
+  --second-color:rgb(17, 17, 17);
   --padding-section: 60px;
   --margin-for-space:10%;
 }
